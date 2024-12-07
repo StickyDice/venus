@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 
-const lato = Lato({ weight: ["700", "400"], subsets: ["latin"] });
+const lato = Lato({ weight: ["900", "700", "400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Flex Living",

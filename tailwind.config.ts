@@ -13,6 +13,10 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary-background)",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -59,13 +63,18 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        appButton: "calc(var(--radius) * 3.5)",
       },
       spacing: {
         15: "60px",
+        35: "140px",
         xl: "1440px",
       },
       maxWidth: {
         xl: "1440px",
+      },
+      placeholderColor: {
+        primary: "var(--primary)",
       },
     },
   },
