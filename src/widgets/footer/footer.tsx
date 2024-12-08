@@ -4,7 +4,7 @@ import AppInput from "~/shared/ui/app-input/app-input";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center">
+    <footer className="flex justify-center pb-6">
       <div className="px-15 pt-35 max-w-xl w-full flex justify-between">
         <div className="flex flex-col gap-4">
           <Image src="/logo.jpg" alt="Flex Living" width={130} height={58} />

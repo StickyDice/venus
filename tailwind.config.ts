@@ -4,6 +4,7 @@ import Animate from "tailwindcss-animate";
 export default {
   darkMode: ["class"],
   content: [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
@@ -64,6 +65,7 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         appButton: "calc(var(--radius) * 3.5)",
+        "5xl": "calc(var(--radius) * 7)",
       },
       spacing: {
         15: "60px",
@@ -75,6 +77,12 @@ export default {
       },
       placeholderColor: {
         primary: "var(--primary)",
+      },
+      fontSize: {
+        main: "52px",
+      },
+      lineHeight: {
+        main: "60px",
       },
     },
   },
