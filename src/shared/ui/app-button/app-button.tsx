@@ -11,7 +11,7 @@ export default function AppButton(props: IAppButtonProps) {
 
   return (
     <button
-      className={`${className} rounded-appButton bg-primary text-white px-10 py-3`}
+      className={`${className} rounded-appButton bg-primary text-white px-10 py-3 font-bold`}
       onClick={onClick}
     >
       {title}
