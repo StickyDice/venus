@@ -1,5 +1,6 @@
 import Footer from "~/widgets/footer/footer";
 import Header from "~/widgets/header/header";
+import HomeFifthBlock from "~/widgets/home/fifth-block/home-fifth-block";
 import HomeFirstBlock from "~/widgets/home/first-block/home-firts-block";
 import HomeFourthBlock from "~/widgets/home/fourth-block/home-fourth-block";
 import HomeSecondBlock from "~/widgets/home/second-block/home-second-block";
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeSecondBlock />
         <HomeThirdBlock />
         <HomeFourthBlock />
+        <HomeFifthBlock />
       </main>
       <Footer />
     </>
