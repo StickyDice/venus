@@ -72,3 +72,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* пидарасы на radix-ui сделали хуйню из-за которой когда открываешь селект элемент
+пропадает скролл со всей блядской страницы. Эта хуйня для фикса. Если кто-то найдет и захочет сделать по нормальному, то делайте
+ */
+html body[data-scroll-locked] {
+  overflow: visible !important;
+  margin-right: 0 !important;
+} 
