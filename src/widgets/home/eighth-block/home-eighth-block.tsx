@@ -16,7 +16,7 @@ export default function HomeEighthBlock() {
           src="/eighth-block/eighth-block-bg.png"
           alt=""
           fill
-          objectFit="cover"
+          className="object-cover"
         />
         <div className="absolute max-w-lg bg-white px-20 py-15 rounded-r-5xl rounded-tl-5xl rounded-bl-appButton top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h2 className="text-5xl font-bold mb-6">Dictum nunc</h2>

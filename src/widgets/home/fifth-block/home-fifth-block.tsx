@@ -9,7 +9,7 @@ export default function HomeFifthBlock() {
           src="/fifth-block/bespoke-partnerships.jpg"
           alt=""
           fill
-          objectFit="cover"
+          className="object-cover"
         />
         <div className="absolute max-w-lg top-35 left-20">
           <h2 className="text-5xl font-bold text-white mb-4">Bespoke spaces</h2>

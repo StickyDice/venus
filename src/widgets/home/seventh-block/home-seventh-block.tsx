@@ -48,8 +48,8 @@ export default function HomeSeventhBlock() {
             ))}
           </CarouselContent>
           <div className="flex justify-center gap-2 mt-4">
-            <CarouselPrevious className="static bg-teal-700 hover:bg-teal-800 text-white rounded-md translate-y-0" />
-            <CarouselNext className="static bg-teal-700 hover:bg-teal-800 text-white rounded-md translate-y-0" />
+            <CarouselPrevious className="static bg-primary hover:bg-teal-800 text-white rounded-md translate-y-0" />
+            <CarouselNext className="static bg-primary hover:bg-teal-800 text-white rounded-md translate-y-0" />
           </div>
         </Carousel>
       </div>
