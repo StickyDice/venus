@@ -4,6 +4,7 @@ import HomeFifthBlock from "~/widgets/home/fifth-block/home-fifth-block";
 import HomeFirstBlock from "~/widgets/home/first-block/home-firts-block";
 import HomeFourthBlock from "~/widgets/home/fourth-block/home-fourth-block";
 import HomeSecondBlock from "~/widgets/home/second-block/home-second-block";
+import HomeSixthBlock from "~/widgets/home/sixth-block/home-sixth-block";
 import HomeThirdBlock from "~/widgets/home/third-block/home-third-block";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <HomeThirdBlock />
         <HomeFourthBlock />
         <HomeFifthBlock />
+        <HomeSixthBlock />
       </main>
       <Footer />
     </>
