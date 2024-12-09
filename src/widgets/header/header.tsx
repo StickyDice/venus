@@ -12,7 +12,7 @@ export default function Header() {
           <Link href="./">Home</Link>
           <Link href="./booking">Booking</Link>
           <Link href="./contacts">Contacts</Link>
-          <Link href="./Profile">Profile</Link>
+          <Link href="./login">Profile</Link>
         </ul>
       </nav>
     </header>

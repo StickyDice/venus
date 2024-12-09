@@ -86,6 +86,9 @@ export default {
       lineHeight: {
         main: "60px",
       },
+      textColor: {
+        primary: "var(--primary)",
+      },
     },
   },
   plugins: [Animate],
