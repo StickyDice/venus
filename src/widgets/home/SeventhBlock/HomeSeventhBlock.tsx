@@ -6,7 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "~/shared/ui/components/ui/carousel";
-import ReviewItem from "~/widgets/home/seventh-block/review-item";
+import ReviewItem from "~/widgets/home/SeventhBlock/ReviewItem";
 
 export default function HomeSeventhBlock() {
   return (

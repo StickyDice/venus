@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HomeProsCard from "~/widgets/home/pros-card/home-pros-card";
+import HomeProsCard from "~/widgets/home/ProsCard/HomeProsCard";
 
 export default function HomeThirdBlock() {
   return (

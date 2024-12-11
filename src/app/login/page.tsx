@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Footer from "~/widgets/footer/footer";
-import Header from "~/widgets/header/header";
-import LoginCard from "~/widgets/login/card/login-card";
+import Footer from "~/widgets/footer/Footer";
+import Header from "~/widgets/header/Header";
+import LoginCard from "~/widgets/Login/Card/LoginCard";
 
 export default function Page() {
   return (
