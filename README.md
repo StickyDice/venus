@@ -18,7 +18,6 @@ This project follows [FSD Architecture](https://feature-sliced.design/docs/get-s
 - Run tests ```pnpm run test [filename]```
 
 ## Naming convention
-1. Folders with kebab-case
-2. Files with kebab-case
-3. Variables and Functions camelCase
-4. Classes with PascalCase
+1. Folders and files with PascalCase
+2. Variables and Functions camelCase
+3. Classes with PascalCase
