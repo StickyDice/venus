@@ -1,7 +1,28 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from "react";
 import AppButton from "~/shared/ui/app-button/app-button";
+import * as VKID from "@vkid/sdk";
+import { GoogleLogin, useGoogleLogin } from "@react-oauth/google";
+import authCallback from "~/widgets/Login/lib/authCallback";
 
 export default function LoginCard({ className }: { className?: string }) {
+  // useEffect(() => {
+  //   VKID.Config.init({
+  //     app: 52837188,
+  //     redirectUrl: "http://localhost",
+  //     scope: "email",
+  //   }).get();
+  // }, []);
+  // const login = useGoogleLogin({
+  //   onSuccess: (response) => {
+  //     console.log("response", response);
+  //     authCallback(response.access_token);
+  //   },
+  //   redirect_uri: "http://localhost",
+  // });
+
   return (
     <div
       className={`${className} flex flex-col items-center px-20 py-7 rounded-appButton overflow-hidden`}
@@ -16,14 +37,17 @@ export default function LoginCard({ className }: { className?: string }) {
         leading={
           <Image src="/login/vk-icon.png" alt="" width={36} height={24} />
         }
+        onClick={() => VKID.Auth.login()}
       />
-      <AppButton
+      {/* <AppButton
         className="mb-5 w-full !bg-[#fafafa] !text-[#535353]"
         title="Войти через Google"
         leading={
           <Image src="/login/google-icon.png" alt="" width={24} height={24} />
         }
-      />
+        onClick={() => login()}
+      /> */}
+      <GoogleLogin onSuccess={console.log} useOneTap />
       <p className="text-white text-center">
         Создавая аккаунт вы подтверждаете согласие с{" "}
         <span className="text-primary underline underline-offset-4">

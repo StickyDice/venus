@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev -p 80 --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,10 +11,13 @@
   "dependencies": {
     "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
+    "@react-oauth/google": "^0.12.1",
     "@vkid/sdk": "^2.4.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.1",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
     "lucide-react": "^0.468.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
@@ -23,6 +26,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

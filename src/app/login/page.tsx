@@ -1,7 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Footer from "~/widgets/footer/Footer";
 import Header from "~/widgets/header/Header";
-import LoginCard from "~/widgets/Login/Card/LoginCard";
+import LoginCard from "~/widgets/Login/ui/Card/LoginCard";
 
 export default function Page() {
   return (
