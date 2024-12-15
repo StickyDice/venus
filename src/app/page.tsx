@@ -12,18 +12,14 @@ import HomeThirdBlock from "~/widgets/home/ThirdBlock/HomeThirdBlock";
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <HomeFirstBlock />
-        <HomeSecondBlock />
-        <HomeThirdBlock />
-        <HomeFourthBlock />
-        <HomeFifthBlock />
-        <HomeSixthBlock />
-        <HomeSeventhBlock />
-        <HomeEighthBlock />
-      </main>
-      <Footer />
+      <HomeFirstBlock />
+      <HomeSecondBlock />
+      <HomeThirdBlock />
+      <HomeFourthBlock />
+      <HomeFifthBlock />
+      <HomeSixthBlock />
+      <HomeSeventhBlock />
+      <HomeEighthBlock />
     </>
   );
 }

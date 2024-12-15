@@ -82,12 +82,19 @@ export default {
       },
       fontSize: {
         main: "52px",
+        l: "18px",
       },
       lineHeight: {
         main: "60px",
       },
       textColor: {
         primary: "var(--primary)",
+      },
+      borderColor: {
+        primary: "var(--primary)",
+      },
+      fontFamily: {
+        lato: "Lato, Arial, Helvetica, sans-serif",
       },
     },
   },
