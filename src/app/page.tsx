@@ -1,5 +1,3 @@
-import Footer from "~/widgets/footer/Footer";
-import Header from "~/widgets/header/Header";
 import HomeEighthBlock from "~/widgets/home/EighthBlock/HomeEighthBlock";
 import HomeFifthBlock from "~/widgets/home/FifthBlock/HomeFifthBlock";
 import HomeFirstBlock from "~/widgets/home/FirstBlock/HomeFirtsBlock";

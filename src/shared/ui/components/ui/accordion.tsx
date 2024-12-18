@@ -3,7 +3,7 @@
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { cn } from "~/shared/lib/utils"
-import { CircleFadingPlus, CirclePlus, ClipboardPlusIcon, Plus } from "lucide-react"
+import { Plus } from "lucide-react"
 
 
 const Accordion = AccordionPrimitive.Root
