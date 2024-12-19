@@ -1,0 +1,3 @@
+enum CookieNames {
+  ACCESS = "access",
+}
