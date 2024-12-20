@@ -10,7 +10,7 @@ export default function Header() {
         </Link>
         <ul className="flex items-center gap-10">
           <Link href="./">Home</Link>
-          <Link href="./booking">Booking</Link>
+          <Link href="./feed">Booking</Link>
           <Link href="./contacts">Contacts</Link>
           <Link href="./login">Profile</Link>
         </ul>

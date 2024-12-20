@@ -1,11 +1,11 @@
 import HotelScroll from "~/widgets/booking/HotelScroll/HotelScroll";
-import BookingPanel from "~/widgets/bookingPanel/ui/BookingPanel";
 import FAQ from "~/widgets/faq/ui/FAQ";
+import FindHotelPanel from "~/widgets/findHotelPanel/ui/FindHotelPanel";
 
 export default function Page() {
   return (
     <>
-      <BookingPanel />
+      <FindHotelPanel />
       <HotelScroll />
       <FAQ />
     </>

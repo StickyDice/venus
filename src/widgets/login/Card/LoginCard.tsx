@@ -11,11 +11,12 @@ export default function LoginCard({ className }: { className?: string }) {
   useEffect(() => {
     VKID.Config.init({
       app: 52837188,
-      redirectUrl: "http://localhost",
+      redirectUrl: "http://localhost/feed",
       scope: "email",
     }).get();
   }, []);
-  const login = useGoogleLogin({
+
+  const googleLogin = useGoogleLogin({
     onSuccess: (response) => {
       authCallback(response.access_token);
     },
@@ -43,7 +44,7 @@ export default function LoginCard({ className }: { className?: string }) {
         leading={
           <Image src="/login/google-icon.png" alt="" width={24} height={24} />
         }
-        onClick={() => login()}
+        onClick={() => googleLogin()}
       />
       <p className="text-white text-center">
         Создавая аккаунт вы подтверждаете согласие с{" "}
