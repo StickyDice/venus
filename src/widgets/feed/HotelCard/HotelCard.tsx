@@ -1,12 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ReactNode } from "react";
-
-export type HotelFeatureIcon = {
-  icon: ReactNode | string;
-  title: string;
-};
+import { HotelFeatureIcon } from "~/entities/hotel/model/hotel";
 
 export interface IHotelCardProps {
   thumbnail: string;

@@ -1,12 +1,11 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
+import { HotelFeatureIcon } from "~/entities/hotel/model/hotel";
 import AppButton from "~/shared/ui/app-button/app-button";
 import BedIcon from "~/shared/ui/icons/bed-icon";
 import ShowerIcon from "~/shared/ui/icons/shower-icon";
-import HotelCard, {
-  HotelFeatureIcon,
-} from "~/widgets/booking/HotelCard/HotelCard";
+import HotelCard from "~/widgets/feed/HotelCard/HotelCard";
 
 const addHotels = () => {
   const amoutOfFakedHotels = 10;
