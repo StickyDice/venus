@@ -24,7 +24,6 @@ export default function HomeSeventhBlock() {
           <CarouselContent className="-ml-2 md:-ml-4">
             {[1, 2, 3, 4].map((_, index) => (
               <CarouselItem
-                // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 className="pl-2 md:pl-4 md:basis-2/3 lg:basis-1/2"
               >

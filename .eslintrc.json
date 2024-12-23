@@ -114,6 +114,7 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-namespace": "off",
     "no-control-regex": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "react/no-array-index-key": "off"
   }
 }

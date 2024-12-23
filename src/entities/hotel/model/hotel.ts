@@ -18,7 +18,7 @@ export default class Hotel {
   // Это нужно для хуйни, в которой написано 500кв.м | Чудесный вид ...
   textFeatures?: string[];
 
-  guestsReviews?: string;
+  guestsReviews?: string[];
 
   description: string;
 
@@ -29,6 +29,8 @@ export default class Hotel {
   hotelDetails?: HotelFeatureIcon[];
 
   images: string[];
+
+  cost: number;
 
   constructor({
     id,
@@ -42,6 +44,7 @@ export default class Hotel {
     location,
     hotelDetails,
     images,
+    cost,
   }: Hotel) {
     this.id = id;
     this.name = name;
@@ -54,5 +57,6 @@ export default class Hotel {
     this.location = location;
     this.hotelDetails = hotelDetails;
     this.images = images;
+    this.cost = cost;
   }
 }
