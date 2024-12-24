@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import AppButton from "~/shared/ui/app-button/app-button";
 import FinalHotelCard from "~/widgets/FinalHotelCard/FinalHotelCard";
 
 export default function Page() {
-  const pathname = usePathname();
   const guests = useSearchParams().get("guests");
   return (
     <section className="flex justify-cent/er">
