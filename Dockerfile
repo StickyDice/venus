@@ -4,7 +4,7 @@ RUN corepack enable
 ADD . /frontend 
 WORKDIR /frontend
 
-RUN pnpm install
+RUN pnpm install --prod
 RUN pnpm run build
 
 EXPOSE 80
