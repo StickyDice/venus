@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import TimelineIcon from "~/app/feed/hotel/[id]/booking/TimelineIcon";
 import CalendarIcon from "~/shared/ui/icons/calendar-icon";
 import GuestsIcon from "~/shared/ui/icons/guests-icon";
 
 export default function FinalHotelCard() {
+  const guests = useSearchParams().get("guests");
+
   return (
     <div className="bg-secondary rounded-appButton overflow-hidden flex flex-col items-center justify-start max-w-[522px]">
       <Image
@@ -32,7 +37,7 @@ export default function FinalHotelCard() {
         </div>
         <div className="flex gap-3 mb-3">
           <GuestsIcon />
-          <span>Гостей 1</span>
+          <span>Гостей {guests}</span>
         </div>
         <span className="block mb-5">Питание включено</span>
         <span className="block font-bold mb-5">Процесс оплаты</span>
