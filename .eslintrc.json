@@ -115,6 +115,7 @@
     "@typescript-eslint/no-namespace": "off",
     "no-control-regex": "off",
     "no-plusplus": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "react-hooks/exhaustive-deps": "off"
   }
 }

@@ -1,58 +1,71 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { HotelFeatureIcon } from "~/entities/hotel/model/hotel";
 import AppButton from "~/shared/ui/app-button/app-button";
 import BedIcon from "~/shared/ui/icons/bed-icon";
 import ShowerIcon from "~/shared/ui/icons/shower-icon";
 import HotelCard from "~/widgets/feed/HotelCard/HotelCard";
 
-const addHotels = () => {
-  const amoutOfFakedHotels = 10;
+type hotelResponse = {
+  id: string;
+  price: number;
+  images: string[];
+  name: string;
+  bathrooms: number;
+  bedrooms: number;
+  tags: string[];
+};
 
-  const iconedFeatures: HotelFeatureIcon[] = [];
-  iconedFeatures.push({
-    icon: <BedIcon />,
-    title: "2 Спальни",
-  });
-  iconedFeatures.push({
-    icon: <ShowerIcon />,
-    title: "2 Спальни",
-  });
+const addHotels = (response: hotelResponse[]) => {
+  const hotelsList = response.map((hotel) => {
+    const iconedFeatures = [
+      { icon: <BedIcon />, title: `${hotel.bedrooms} спальня` },
+      { icon: <ShowerIcon />, title: `${hotel.bathrooms} ванных` },
+    ];
 
-  const textFeatures = ["Вид на город", "3ий этаж", "Лифт", "Парковка"];
+    const textFeatures = hotel.tags;
 
-  const hotelsList: ReactNode[] = [];
-
-  for (let _ = 0; _ < amoutOfFakedHotels; _++) {
-    hotelsList.push(
+    return (
       <HotelCard
+        id={hotel.id}
         key={Math.random()}
-        thumbnail="https://a.travelcdn.mts.ru/property-photos/1633728227/2347900126/b906bb336c2edc107d3ff70ed3812ed641a5131e.jpeg?width=640&fit=bounds&quality=75"
-        hotelName="Гостинница Москва"
+        thumbnail="/test/test_1.png"
+        hotelName={hotel.name}
         iconedFeatures={iconedFeatures}
         textFeatures={textFeatures}
-        cost="30 000"
-      />,
+        cost={hotel.price.toString()}
+      />
     );
-  }
+  });
 
   return hotelsList;
+};
+
+const fetchHotels = async (page: number): Promise<hotelResponse[]> => {
+  const data = await fetch(`http://localhost:5000/feed/get?page=${page}`, {});
+  const parsedData = await data.json();
+
+  return parsedData;
 };
 
 export default function HotelScroll() {
   /* -------------------------------------------------------------------------- */
   /*                                    MOCK                                    */
   /* -------------------------------------------------------------------------- */
+  const [page, setPage] = useState(1);
   const [hotelsListState, setHotelListState] = useState<ReactNode[]>([]);
   useEffect(() => {
-    const hotelsList = addHotels();
-    setHotelListState(hotelsList);
-  }, []);
+    const getHotels = async () => {
+      const hotelsResponse = await fetchHotels(page);
+      const hotelsList = addHotels(hotelsResponse);
+      setHotelListState(hotelsListState.concat(hotelsList));
+    };
+
+    getHotels();
+  }, [page]);
 
   const handleOnClick = () => {
-    const hotelsList = addHotels();
-    setHotelListState(hotelsListState.concat(hotelsList));
+    setPage((prev) => prev + 1);
   };
 
   return (

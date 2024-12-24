@@ -1,10 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import AppButton from "~/shared/ui/app-button/app-button";
 import FinalHotelCard from "~/widgets/FinalHotelCard/FinalHotelCard";
 
 export default function Page() {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-cent/er">
       <div className="px-10 flex justify-between gap-28 max-w-xl w-full">
         <div className="basis-full max-w-[630px]">
           <h2 className="text-main leading-main mb-10 font-bold">

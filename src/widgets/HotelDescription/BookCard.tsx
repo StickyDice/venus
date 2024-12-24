@@ -2,6 +2,8 @@
 
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import GuestsCounter from "~/features/guestsCounter/ui/GuestsCounter";
 import { cn } from "~/shared/lib/utils";
@@ -18,6 +20,7 @@ import CalendarIcon from "~/shared/ui/icons/calendar-icon";
 export default function BookCard({ cost }: { cost: number }) {
   const [inDate, setInDate] = useState<Date>();
   const [outDate, setOutDate] = useState<Date>();
+  const pathname = usePathname().split("/");
   return (
     <div className="flex flex-col w-full">
       <h2 className="text-4xl font-bold mb-11 w-full text-center">
@@ -93,7 +96,9 @@ export default function BookCard({ cost }: { cost: number }) {
       </div>
       <GuestsCounter className="pl-0 mb-3" />
       <p className="mb-5">Включены завтраки и ужины</p>
-      <AppButton className="mb-1.5" title="Оформить" />
+      <Link href="" className="self-center">
+        <AppButton className="mb-1.5" title="Оформить" />
+      </Link>
       <p className="text-center max-w-md self-center">
         При нажатии кнопки “оформить” ваша бронь будет зарезервирована
         автоматически
