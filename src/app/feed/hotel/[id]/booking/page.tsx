@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import AppButton from "~/shared/ui/app-button/app-button";
 import FinalHotelCard from "~/widgets/FinalHotelCard/FinalHotelCard";
 
 export default function Page() {
+  const guests = useSearchParams().get("guests");
   return (
     <section className="flex justify-cent/er">
       <div className="px-10 flex justify-between gap-28 max-w-xl w-full">
@@ -33,7 +35,7 @@ export default function Page() {
             <span>40 000</span>
           </div>
           <div className="flex flex-col items-center">
-            <Link href="./guest">
+            <Link href={`./guest?guests=${guests}`}>
               <AppButton title="Перейти к оплате" className="mb-1" />
             </Link>
             <p className="text-sm text-center max-w-52">
