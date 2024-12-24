@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import LoginCard from "~/widgets/Login/Card/LoginCard";
+import LoginCard from "~/widgets/login/Card/LoginCard";
 
 export default function Page() {
   return (
