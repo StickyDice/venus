@@ -21,3 +21,9 @@ This project follows [FSD Architecture](https://feature-sliced.design/docs/get-s
 1. Folders and files with PascalCase
 2. Variables and Functions camelCase
 3. Classes with PascalCase
+
+## Startup with Docker
+```sh 
+$ docker build . -t venus-frontend-app:1.0
+$ docker run -d -p 80:80 -p 443:443 venus-frontend-app:1.0 
+```
