@@ -1,3 +1,5 @@
+"use client";
+
 import AppButton from "~/shared/ui/app-button/app-button";
 import AppInput from "~/shared/ui/app-input/app-input";
 import { Label } from "~/shared/ui/components/ui/label";
@@ -64,7 +66,11 @@ export default function Page() {
               </SelectContent>
             </Select>
           </div>
-          <AppButton title="Оплатить" className="mb-4" />
+          <AppButton
+            title="Оплатить"
+            className="mb-4"
+            onClick={() => alert("Вы заброниваровали отель")}
+          />
           <p className="max-w-[420px]">
             Нажимая &quot;Оплатить&quot; вы подтверждаете согласие с правилами
             сервиса, политикой персональных данных, и правилами проживания в

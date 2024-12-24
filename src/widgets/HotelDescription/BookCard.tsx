@@ -98,10 +98,16 @@ export default function BookCard({ cost }: { cost: number }) {
       <GuestsCounter className="pl-0 mb-3" />
       <p className="mb-5">Включены завтраки и ужины</p>
       <Link
-        href={`/feed/hotel/${id}/booking?guests=${guests}`}
+        href={`/feed/hotel/${id}/booking?guests=${guests ?? 1}&inDate=${inDate}&outDate=${outDate}`}
         className="self-center"
       >
-        <AppButton className="mb-1.5" title="Оформить" />
+        <AppButton
+          className="mb-1.5"
+          title="Оформить"
+          disabled={
+            !(inDate && outDate) || inDate.getTime() >= outDate.getTime()
+          }
+        />
       </Link>
       <p className="text-center max-w-md self-center">
         При нажатии кнопки “оформить” ваша бронь будет зарезервирована

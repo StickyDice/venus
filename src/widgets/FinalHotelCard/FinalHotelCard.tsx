@@ -1,5 +1,7 @@
 "use client";
 
+import { format } from "date-fns";
+import { ru } from "date-fns/locale";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import TimelineIcon from "~/app/feed/hotel/[id]/booking/TimelineIcon";
@@ -7,7 +9,10 @@ import CalendarIcon from "~/shared/ui/icons/calendar-icon";
 import GuestsIcon from "~/shared/ui/icons/guests-icon";
 
 export default function FinalHotelCard() {
-  const guests = useSearchParams().get("guests");
+  const searchParams = useSearchParams();
+  const guests = searchParams.get("guests");
+  const inDate = searchParams.get("inDate") as string;
+  const outDate = searchParams.get("outDate") as string;
 
   return (
     <div className="bg-secondary rounded-appButton overflow-hidden flex flex-col items-center justify-start max-w-[522px]">
@@ -24,14 +29,14 @@ export default function FinalHotelCard() {
             <span className="text-l text-black font-bold mb-3">Заезд</span>
             <div className="flex gap-3">
               <CalendarIcon />
-              <span>31.12.2021</span>
+              <span>{format(inDate, "PPP", { locale: ru })}</span>
             </div>
           </div>
           <div>
             <span className="text-l text-black font-bold mb-3">Отъезд</span>
             <div className="flex gap-3">
               <CalendarIcon />
-              <span>31.12.2021</span>
+              <span>{format(outDate, "PPP", { locale: ru })}</span>
             </div>
           </div>
         </div>

@@ -116,6 +116,7 @@
     "no-control-regex": "off",
     "no-plusplus": "off",
     "react/no-array-index-key": "off",
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "no-alert": "off"
   }
 }
