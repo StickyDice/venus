@@ -9,10 +9,10 @@ export default function Header() {
           <Image src="/logo.jpg" alt="Flex Living" width={130} height={58} />
         </Link>
         <ul className="flex items-center gap-10">
-          <Link href="/">Home</Link>
-          <Link href="/feed">Booking</Link>
-          <Link href="/contacts">Contacts</Link>
-          <Link href="/login">Profile</Link>
+          <Link href="/">Главная</Link>
+          <Link href="/feed">Аренда</Link>
+          <Link href="/contacts">Контакты</Link>
+          <Link href="/login">Аккаунт</Link>
         </ul>
       </nav>
     </header>

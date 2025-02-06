@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Hotel from "~/entities/hotel/model/hotel";
 import BookCard from "~/widgets/HotelDescription/BookCard";
 
@@ -43,7 +44,9 @@ export default function HotelDescription({ hotel }: { hotel: Hotel }) {
       </div>
       <div className="basis-full">
         <div className="bg-secondary rounded-appButton py-4 px-10 flex flex-col items-center gap-5">
-          <BookCard cost={hotel.cost} />
+          <Suspense>
+            <BookCard cost={hotel.cost} />
+          </Suspense>
           <div />
         </div>
       </div>

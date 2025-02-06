@@ -7,12 +7,11 @@ export default function HomeThirdBlock() {
       <div className="max-w-xl flex flex-col items-center">
         <div className="max-w-3xl mb-15">
           <h2 className="text-5xl font-bold text-center mb-4">
-            Id aliquam molestie nunc quis turpis imperdiet quis
+            Часто гости ищут
           </h2>
           <p className="text-center">
-            Euismod condimentum tempus quis nibh. Accumsan imperdiet non
-            vulputate venenatis, lorem amet, purus amet, sagittis. Cum orci quam
-            enim adipiscing interdum purus.
+            Самые частые критерии запросов наших пользователей за последние 3
+            месяца.
           </p>
         </div>
         <div className="grid grid-cols-4 gap-5">
@@ -25,9 +24,8 @@ export default function HomeThirdBlock() {
                 height={60}
               />
             }
-            title="Flexible living"
-            content="Stay as Long or as little as you need with month-to-
-month contracts"
+            title="Гибкий въезд/выезд"
+            content="Оставайтесь, сколько нужно, мы уладим формальности."
           />
           <HomeProsCard
             icon={
@@ -38,8 +36,8 @@ month contracts"
                 height={60}
               />
             }
-            title="Move-in ready"
-            content="Ready to move in with everything you need"
+            title="Готов ко въезду"
+            content="Готов ко въезду со всем что вам необходимо"
           />
           <HomeProsCard
             icon={
@@ -50,9 +48,8 @@ month contracts"
                 height={60}
               />
             }
-            title="High-speed Wi-Fi"
-            content="Best in class internet speeds suitable for working 
-from home"
+            title="Быстрый Wi-Fi"
+            content="Высокоскоростной и бесперебойный интернет."
           />
           <HomeProsCard
             icon={
@@ -63,8 +60,8 @@ from home"
                 height={60}
               />
             }
-            title="24/7 support"
-            content="On hand team for any issues you have"
+            title="24/7 поддержка"
+            content="Наша команда готова решить любую вашу проблему"
           />
         </div>
       </div>

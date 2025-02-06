@@ -1,8 +1,8 @@
 FROM node:20-alpine
 RUN corepack enable
 
-ADD . /frontend 
-WORKDIR /frontend
+ADD . /app 
+WORKDIR /app
 
 RUN pnpm install --prod
 RUN pnpm run build

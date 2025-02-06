@@ -12,12 +12,14 @@ export default function HomeFifthBlock() {
           className="object-cover"
         />
         <div className="absolute max-w-lg top-35 left-20">
-          <h2 className="text-5xl font-bold text-white mb-4">Bespoke spaces</h2>
+          <h2 className="text-5xl font-bold text-white mb-4">
+            Говорящие места
+          </h2>
           <p className="text-white mb-15">
-            Expertly designed to create extraordinary spaces with the flexible
-            renter in mind
+            Поможем подобрать жильё недалеко от местных достопримечательностей,
+            или интересных мероприятий.
           </p>
-          <AppButton title="Start booking" />
+          <AppButton title="Подобрать жильё" />
         </div>
       </div>
     </section>

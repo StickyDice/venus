@@ -7,7 +7,7 @@ export default function HomeFourthBlock() {
     <section className="pt-35 flex justify-center">
       <div className="max-w-xl flex flex-col items-center">
         <h2 className="text-5xl font-bold mb-15 text-center">
-          Choose your location
+          Популярные города
         </h2>
         <div className="grid grid-cols-6 gap-5 items-end mb-15">
           <div className="flex flex-col items-center">
@@ -72,7 +72,7 @@ export default function HomeFourthBlock() {
           </div>
         </div>
         <Link href="/">
-          <AppButton title="View all spaces" />
+          <AppButton title="Посмотреть все" />
         </Link>
       </div>
     </section>

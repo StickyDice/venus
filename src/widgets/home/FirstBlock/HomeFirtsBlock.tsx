@@ -7,11 +7,11 @@ export default function HomeFirstBlock() {
         <Image src="/hero.jpg" fill alt="" className="object-cover" />
         <div className="absolute -left-1 top-35 bg-white px-20 py-15 max-w-lg rounded-r-5xl">
           <h1 className="text-main font-bold leading-main mb-6">
-            We rent your property
+            Аренда — наша забота
           </h1>
           <p className="text-base">
-            Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis
-            proin fermentum, consectetur cursus.{" "}
+            Мы сами решим все проблемы, пока вы получаете удовольствие от
+            поездки.
           </p>
         </div>
       </div>

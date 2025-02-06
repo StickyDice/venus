@@ -35,11 +35,11 @@ export default function HomeSecondBlock() {
           />
         </div>
         <div className="bg-secondary px-20 py-30">
-          <h2 className="text-5xl font-bold mb-6">The future is flexible</h2>
+          <h2 className="text-5xl font-bold mb-6">Жильё на любой вкус</h2>
           <p>
-            We believe in a world where finding a home is just a click away.
-            Whether you’re selling your home, travelling for work or moving to a
-            new city. Just bring your bags, and we’ll handle the rest.
+            Мы уверены, что в нашем каталоге найдётся номер под любые параметры.
+            Командировка, отпуск, переезд — какой бы не была цель вашей поездки,
+            вы сможете насладиться ей.
           </p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import BookCalendar from "~/features/bookCalendar/ui/BookCalendar";
 import CitySelector from "~/features/citySelector/ui/CitySelector";
 import GuestsCounter from "~/features/guestsCounter/ui/GuestsCounter";
@@ -9,7 +10,9 @@ export default function FindHotelPanel() {
       <div className="flex border-solid rounded-appButton border-primary border-4 overflow-hidden max-w-[1064px] p-0.5">
         <CitySelector />
         <BookCalendar />
-        <GuestsCounter />
+        <Suspense>
+          <GuestsCounter />
+        </Suspense>
         <AppButton title="Найти" className="ml-5" />
       </div>
     </div>

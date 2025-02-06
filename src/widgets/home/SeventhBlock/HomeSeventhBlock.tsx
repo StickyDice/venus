@@ -12,8 +12,8 @@ export default function HomeSeventhBlock() {
   return (
     <section className="pt-35 flex justify-center">
       <div className="w-full flex flex-col items-center">
-        <h2 className="text-5xl font-bold mb-4">What our partners think</h2>
-        <p className="mb-15">See what our partners say about us</p>
+        <h2 className="text-5xl font-bold mb-4">Отзывы наших клиентов</h2>
+        <p className="mb-15">Что говорят о нас пользователи</p>
         <Carousel
           opts={{
             align: "center",
@@ -40,7 +40,8 @@ export default function HomeSeventhBlock() {
                     }
                     name="Annie"
                     position="Landlord in SE1"
-                    content="Nascetur urna, fusce consectetur massa nulla viverra aenean semper. Dignissim nibh sed condimentum eget ac suspendisse eget amet integer. Mattis etiam sagittis fermentum fames habitasse. Vulputate volutpat sit est, elementum. Accumsan nunc nunc arcu faucibus aliquam."
+                    content="Всё получилось просто великолепно! Ехала в командировку в Москву, очень переживала за жильё, однако получилось всё в лучшем виде! 
+После поездки остались только хорошие впечатления. Спасибо за такой чудесный сервис"
                   />
                 </div>
               </CarouselItem>

@@ -18,15 +18,15 @@ export default function HomeEighthBlock() {
           fill
           className="object-cover"
         />
-        <div className="absolute max-w-lg bg-white px-20 py-15 rounded-r-5xl rounded-tl-5xl rounded-bl-appButton top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <h2 className="text-5xl font-bold mb-6">Dictum nunc</h2>
+        <div className="absolute max-w-lg bg-white px-15 py-15 rounded-r-5xl rounded-tl-5xl rounded-bl-appButton top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <h2 className="text-5xl font-bold mb-6">Время — деньги</h2>
           <p className="mb-8">
-            Vel mattis integer pulvinar morbi quis amet eu. In nunc facilisis
-            proin fermentum, consectetur cursus.{" "}
+            Не тратьте время в поездке на вопросы с арендой. Ими займёмся мы.
+            Осталось только выбрать куда поедем
           </p>
           <Select>
             <SelectTrigger className="w-full bg-primary text-white font-bold rounded-full">
-              <SelectValue placeholder="Choose city" />
+              <SelectValue placeholder="Перейти к поиску" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
