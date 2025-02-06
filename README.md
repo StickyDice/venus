@@ -5,12 +5,8 @@
 - framework: [Next.js](https://nextjs.org/)
 - linters: [ESlint](https://eslint.org/) + [prettier](about:blank)
 - component library: [shadcn](https://ui.shadcn.com/)
-- state management: [zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
 - styles: [tailwind](https://tailwindcss.com/) + css.modules
 - package manager: [pnpm](https://pnpm.io/)
-
-## Architecture
-This project follows [FSD Architecture](https://feature-sliced.design/docs/get-started/overview)
 
 ## Getting started
 - Run dev mode ```pnpm run dev```
