@@ -1,11 +1,9 @@
 "use client";
 
+import * as VKID from "@vkid/sdk";
 import Image from "next/image";
 import { useEffect } from "react";
 import AppButton from "~/shared/ui/app-button/app-button";
-import * as VKID from "@vkid/sdk";
-import { useGoogleLogin } from "@react-oauth/google";
-import authCallback from "~/widgets/Login/lib/authCallback";
 
 export default function LoginCard({ className }: { className?: string }) {
   useEffect(() => {
@@ -15,12 +13,6 @@ export default function LoginCard({ className }: { className?: string }) {
       scope: "email",
     }).get();
   }, []);
-
-  const googleLogin = useGoogleLogin({
-    onSuccess: (response) => {
-      authCallback(response.access_token);
-    },
-  });
 
   return (
     <div
@@ -37,14 +29,6 @@ export default function LoginCard({ className }: { className?: string }) {
           <Image src="/login/vk-icon.png" alt="" width={36} height={24} />
         }
         onClick={() => VKID.Auth.login()}
-      />
-      <AppButton
-        className="mb-5 w-full !bg-[#fafafa] !text-[#535353]"
-        title="Войти через Google"
-        leading={
-          <Image src="/login/google-icon.png" alt="" width={24} height={24} />
-        }
-        onClick={() => googleLogin()}
       />
       <p className="text-white text-center">
         Создавая аккаунт вы подтверждаете согласие с{" "}
