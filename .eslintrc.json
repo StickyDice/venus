@@ -117,6 +117,8 @@
     "no-plusplus": "off",
     "react/no-array-index-key": "off",
     "react-hooks/exhaustive-deps": "off",
-    "no-alert": "off"
+    "no-alert": "off",
+    "no-param-reassign": "off",
+    "eol-last": ["error", "always"]
   }
 }
